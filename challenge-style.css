@@ -1,0 +1,260 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+  color: #333;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+.product-title,
+.details-title,
+.shipping,
+.add-cart {
+  text-transform: uppercase;
+}
+
+.product {
+  position: relative;
+  border: 4px solid #000;
+  width: 825px;
+  margin: 50px auto;
+}
+
+.product-title {
+  background-color: #f7f7f7;
+  text-align: center;
+  font-weight: bold;
+  padding: 15px;
+}
+
+.price {
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+.shipping {
+  color: #777;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.sale {
+  display: inline-block;
+  position: absolute;
+  top: -17px;
+  left: -38px;
+  padding: 7px 15px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: #ec2f2f;
+  color: white;
+}
+
+.more-info:link,
+.more-info:visited {
+  display: inline-block;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+.more-info:hover,
+.more-info:active {
+  text-decoration: none;
+}
+
+.product-colors {
+  margin-bottom: 40px;
+}
+
+.color {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+  background-color: #000;
+}
+
+.color-blue {
+  background-color: #2f6ee2;
+}
+
+.color-red {
+  background-color: #ec2f2f;
+}
+
+.color-yellow {
+  background-color: #f0bf1e;
+}
+
+.color-green {
+  background-color: #90cc20;
+}
+
+.color-brown {
+  background-color: #885214;
+  margin-right: 0;
+}
+
+.details-title {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.details-list {
+  list-style: square;
+  margin-left: 20px;
+}
+
+.details-list li {
+  margin-bottom: 10px;
+}
+
+.add-cart {
+  font-size: 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  padding: 20px;
+  border-top: 4px solid #000;
+}
+
+.add-cart:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/********** CSS GRID **********/
+.product {
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr;
+  column-gap: 40px;
+}
+
+.product-title {
+  grid-column: 1/-1;
+}
+
+.product-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.shipping {
+  margin-bottom: 0;
+}
+
+.product-colors {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 0;
+}
+
+.color {
+  display: block;
+  margin-right: 0;
+}
+
+.add-cart {
+  grid-column: 1/-1;
+}
+
+/********** FLEXBOX ***********/
+/*
+.container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.product-img {
+  flex: 0 0;
+}
+
+.product-info {
+  flex: 1;
+}
+
+.product-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.shipping {
+  margin-bottom: 0;
+}
+
+.product-colors {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 0;
+}
+
+.color {
+  display: block;
+  margin-right: 0;
+}
+
+.product-details {
+  flex: 1;
+}
+*/
+
+/************ FLOAT ************/
+/*
+.cleafix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.product-img {
+  float: left; 
+  margin-right: 40px;
+}
+
+.price {
+  float: left;
+}
+
+.shipping {
+  float: right;
+  margin-top: 8px;
+}
+
+.product-description {
+  clear: both;
+  margin-bottom: 10px;
+}
+
+.product-info {
+  float: left;
+  width: 243px;
+  margin-top: 20px;
+  margin-right: 40px;
+}
+
+.product-details {
+  float: left;
+  width: 243px;
+  margin-top: 25px;
+}
+*/
